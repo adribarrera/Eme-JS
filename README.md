@@ -22,6 +22,7 @@ Al pausar en la iteración del incidente ID `102` (`Falsa alarma de humo en loca
 **Bugs detectados y resueltos:**  
 1. **Variable inexistente o fuera de scope:** En la primera versión se detectó una discrepancia al llamar `garvedadNumerica` en el `switch` en vez de `gravedadNumerica`, lo que provocaba un fallo de ejecución `ReferenceError`.
 
+2. **Error en ruta carpeta Workflows** La creación de la carpeta workflows se hizo en una ruta que no era correcta, debía estar en `.github` para que las actions funcionen.
 ---
 
 ### 👥 Experiencia de Pair Programming
